@@ -1,0 +1,122 @@
+1.) We prefer to declare class outside main function , due to scope restrictions.
+
+    If class is public then class name should be same as file name
+
+
+2.) Classes/Objects  are passed by reference (because we point objects with reference variable).
+
+
+3.) If object is created but is not initialized , its attributes will have default values 
+
+->  for example : s1.name = null(String)  ,  s1.roll_number = 0(integer)  ,  s1.percentage = 0.0(double)
+
+
+
+4.) Access Modifiers
+
+i.) Public - all packages
+
+ii.) Default - same package
+
+iii.) Private - same class
+
+
+5.) In Java, you cannot make a class private unless it is a nested (inner) class. 
+    Only nested classes (classes inside another class) can have the private access modifier.
+
+✔ You can make attributes, methods, and constructors private.
+❌ You cannot make a top-level class private, but you can make an inner class private.
+
+
+
+6.) Getters and Setters -> We can access private and change private attributes in same and also in different package.
+
+
+7.) Types of Variables in Java
+In Java, variables are categorized into three main types based on their scope and behavior:
+
+Local Variables
+Instance Variables (Non-Static Variables)
+Static Variables (Class Variables)
+
+
+
+8.)Constructer is a special function
+It has no return type
+Its name should be same as class name
+We need not to call constructer , it will be automatically called when a object is been created
+if  we have multiple construter ->   constructer overloading
+
+
+Types of Constructer
+
+1.) Default Constructer
+
+2.) Parametrize Constructer
+
+Constructors in Java can have access modifiers just like methods
+
+
+This Keyword
+9.) To Differentiate Instance Variables from Parameters
+👉 If a method parameter has the same name as an instance variable, this helps to refer to the instance variable.
+
+
+10.) Polymorphism  -> poly means- many and morphism means - forms  
+
+
+Polymorphism also about methods - many forms
+
+i.e method overloading - same function names , different parameters
+    method overriding  -  same function name , same parameters , inheritence
+
+
+Types of Polymorphism
+
+1.) Static Polymorphism - Compile time polymorphism - method overloading
+2.) Dynamic Polymorphism - Runtime polymorphism - method overriding
+
+
+11.)Object class is the superclass of all classes in Java.
+
+
+12.)Super is a reference variable used in a child class to refer to the parent class.
+
+📌 Uses of super
+1️ Call Parent Class Constructor
+2️ Call Parent Class Method
+3️ Access Parent Class Variable
+
+
+Usage	                 Purpose
+super()	                 Calls parent constructor
+super.method()	         Calls parent method
+super.variable	         Accesses parent variable
+
+
+13.)The final keyword is used to restrict modification. It can be applied to variables, methods, and classes.
+
+📌 Uses of final
+Where Used?	                                         Purpose
+final variable	                                     Value cannot be changed (constant).
+final method	                                     Cannot be overridden in child class.
+final class	                                         Cannot be inherited (no subclass).
+
+
+
+14.)Sometimes we declare a class inside a class ->  which is called inner class
+
+    Inner classes was introduced in version 1.1
+
+    If without existing one object there is no chance of existing another object ( if no college then no department , Cascading effect)
+    
+    
+ 15.) Types of Inner Classes
+ 
+ i.) Regular/Normal Inner Class
+ ii.)Function Inner Class
+ iii.)Anonymous Inner Class
+ iv.) Static Nested Class
+ 
+ 
+ 
